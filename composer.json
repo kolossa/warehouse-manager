@@ -14,12 +14,14 @@
 	"minimum-stability": "dev",
 	"autoload": {
 		"psr-4": {
-			"Webdream\\Warehouse\\Management\\": "src/"
-		},
-		"classmap": [
-            "src/"
-        ]
+			"webdream\\Warehouse\\Management\\": "src/webdream/Warehouse/Management"
+		}
 	},
+	"autoload-dev": {
+        "psr-4": {
+            "tests\\": "src/tests"
+        }
+    },
 	"require-dev": {
         "phpunit/phpunit": "^8"
     }
